@@ -2,6 +2,8 @@
 
 $main-font: "Open Sans", sans-serif;
 
+$width: 525px;
+
 $h1-font: 16px;
 $li-font: 14px;
 $percent-number: 12px;
@@ -22,6 +24,17 @@ $notification: #ff5621;
   font-family: $main-font;
 }
 
-h1 {
-  font-size: $h1-font;
+.head-container {
+  margin: 40px 0 0 40px;
+  background-color: $secondary;
+  color: $font-color;
+  display: flex;
+  width: $width;
+  padding: 35px;
+  border-radius: 5px 5px 0 0;
+
+  img {
+    height: 80px;
+    width: 80px;
+  }
 }
