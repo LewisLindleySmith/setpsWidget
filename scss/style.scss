@@ -2,7 +2,7 @@
 
 $main-font: "Open Sans", sans-serif;
 
-$width: 525px;
+$width: 300px;
 
 $h1-font: 16px;
 $li-font: 14px;
@@ -14,7 +14,7 @@ $reg: 400;
 $font-color: #ffffff;
 $primary: #004d75;
 $secondary: #17b890;
-$btn-background: 004466;
+$btn-background: #004466;
 $notification: #ff5621;
 
 * {
@@ -30,11 +30,97 @@ $notification: #ff5621;
   color: $font-color;
   display: flex;
   width: $width;
-  padding: 35px;
   border-radius: 5px 5px 0 0;
 
+  .head-content {
+    padding: 20px 0 20px 20px;
+  }
+
+  .head-img {
+    padding: 20px 20px 20px 0;
+  }
+
+  h1 {
+    font-size: $h1-font;
+    margin: 0;
+  }
+
   img {
-    height: 80px;
-    width: 80px;
+    height: 48px;
+    width: 48x;
+  }
+}
+
+.main-container {
+  width: $width;
+  margin-left: 50px;
+  background-color: $primary;
+  color: $font-color;
+
+  .progress-bar {
+    padding: 35px;
+    font-size: $percent-number;
+  }
+
+  .progress-container {
+    display: flex;
+
+    li {
+      list-style-type: none;
+    }
+
+    .circles {
+      height: 45px;
+      width: 45px;
+      background-color: $btn-background;
+      border-radius: 50%;
+      margin: 0 0 15px 35px;
+    }
+
+    .strike-words {
+      font-size: $li-font;
+      margin: 10px 0 42px 30px;
+    }
+  }
+}
+
+.tick {
+  height: 45px;
+  width: 45px;
+  background-color: $btn-background;
+  border-radius: 50%;
+  margin: 0 0 15px 35px;
+}
+
+.close {
+  height: 65px;
+  width: 65px;
+  background-color: $btn-background;
+  border-radius: 50%;
+  margin: 0 0 15px 35px;
+
+  .hor {
+    position: relative;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .hor::before,
+  .hor::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 4px; /* cross thickness */
+    background-color: $font-color;
+  }
+
+  .hor::before {
+    transform: rotate(45deg);
+  }
+
+  .hor::after {
+    transform: rotate(-45deg);
   }
 }
