@@ -91,10 +91,6 @@
   margin: 10px 0 42px 30px;
 }
 
-.main-container .progress-container .strike-words:hover {
-  border: 1px solid #4092be;
-}
-
 .close-btn {
   width: 300px;
   margin: 20px 0 0 50px;
@@ -192,5 +188,11 @@
   color: #17b890;
   font-size: 20px;
   margin: 8px;
+}
+
+#helloWorld {
+  width: 100%;
+  height: 100px;
+  background-color: #004d75;
 }
 /*# sourceMappingURL=style.css.map */
