@@ -92,15 +92,7 @@
 }
 
 .main-container .progress-container .strike-words:hover {
-  border: 1.5px solid #4092be;
-}
-
-.tick {
-  height: 45px;
-  width: 45px;
-  background-color: #004466;
-  border-radius: 50%;
-  margin: 0 0 15px 35px;
+  border: 1px solid #4092be;
 }
 
 .close-btn {
@@ -175,5 +167,30 @@
   font-weight: bold;
   color: #ffffff;
   padding: 3px 0 0 7px;
+}
+
+.tick-circle {
+  height: 45px;
+  width: 45px;
+  background-color: #17b890;
+  border-radius: 50%;
+  margin: 0 0 15px 35px;
+  position: relative;
+}
+
+.tick-circle .inner-circle {
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  top: 5px;
+  left: 5px;
+}
+
+.tick-circle .inner-circle .fa-check {
+  color: #17b890;
+  font-size: 20px;
+  margin: 8px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,23 @@
+$main-font: "Open Sans", sans-serif;
+
+$width: 300px;
+
+$h1-font: 16px;
+$li-font: 14px;
+$percent-number: 12px;
+$notification: 10px;
+
+$reg: 400;
+
+$font-color: #ffffff;
+$primary: #004d75;
+$secondary: #17b890;
+$btn-background: #004466;
+$notification-color: #ff5621;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: $main-font;
+}

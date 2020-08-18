@@ -1,0 +1,54 @@
+.main-container {
+  width: $width;
+  margin-left: 50px;
+  background-color: $primary;
+  color: $font-color;
+  border-radius: 0 0 5px 5px;
+
+  .progress-percent {
+    padding: 35px;
+    font-size: $percent-number;
+    display: flex;
+
+    .progress-bar {
+      width: 75%;
+      height: 5px;
+      margin: 8px 0 0 15px;
+      background-color: $btn-background;
+      border-radius: 5px;
+
+      .progress-position {
+        width: 33%;
+        height: 5px;
+        background-color: $secondary;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  .progress-container {
+    display: flex;
+
+    li {
+      list-style-type: none;
+    }
+
+    .circles {
+      height: 45px;
+      width: 45px;
+      background-color: $btn-background;
+      border-radius: 50%;
+      margin: 0 0 15px 35px;
+      cursor: pointer;
+    }
+
+    .strike-words {
+      font-size: $li-font;
+      margin: 10px 0 42px 30px;
+
+      &:hover {
+        border: 1px solid #4092be;
+      }
+    }
+  }
+}
