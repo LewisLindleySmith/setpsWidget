@@ -83,11 +83,16 @@
   background-color: #004466;
   border-radius: 50%;
   margin: 0 0 15px 35px;
+  cursor: pointer;
 }
 
 .main-container .progress-container .strike-words {
   font-size: 14px;
   margin: 10px 0 42px 30px;
+}
+
+.main-container .progress-container .strike-words:hover {
+  border: 1.5px solid #4092be;
 }
 
 .tick {
