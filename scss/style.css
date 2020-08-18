@@ -41,11 +41,30 @@
   margin-left: 50px;
   background-color: #004d75;
   color: #ffffff;
+  border-radius: 0 0 5px 5px;
 }
 
-.main-container .progress-bar {
+.main-container .progress-percent {
   padding: 35px;
   font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-container .progress-percent .progress-bar {
+  width: 75%;
+  height: 5px;
+  margin: 8px 0 0 15px;
+  background-color: #004466;
+  border-radius: 5px;
+}
+
+.main-container .progress-percent .progress-bar .progress-position {
+  width: 33%;
+  height: 5px;
+  background-color: #17b890;
+  border-radius: 5px;
 }
 
 .main-container .progress-container {
@@ -98,10 +117,12 @@
   cursor: pointer;
 }
 
-.close-btn .close .hor {
+.close-btn .close .cross {
   position: relative;
   height: 35px;
+  /* cross length */
   width: 35px;
+  /* cross length */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,8 +135,8 @@
           justify-content: center;
 }
 
-.close-btn .close .hor::before,
-.close-btn .close .hor::after {
+.close-btn .close .cross::before,
+.close-btn .close .cross::after {
   position: absolute;
   content: "";
   top: 34px;
@@ -126,13 +147,28 @@
   background-color: #ffffff;
 }
 
-.close-btn .close .hor::before {
+.close-btn .close .cross::before {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-.close-btn .close .hor::after {
+.close-btn .close .cross::after {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+
+.close-btn .number-indicator-btn {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ff5621;
+  position: absolute;
+}
+
+.close-btn .number-indicator-btn .number-indicator {
+  font-size: 10px;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 3px 0 0 7px;
 }
 /*# sourceMappingURL=style.css.map */

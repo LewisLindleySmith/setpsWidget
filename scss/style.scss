@@ -15,7 +15,7 @@ $font-color: #ffffff;
 $primary: #004d75;
 $secondary: #17b890;
 $btn-background: #004466;
-$notification: #ff5621;
+$notification-color: #ff5621;
 
 * {
   box-sizing: border-box;
@@ -56,10 +56,27 @@ $notification: #ff5621;
   margin-left: 50px;
   background-color: $primary;
   color: $font-color;
+  border-radius: 0 0 5px 5px;
 
-  .progress-bar {
+  .progress-percent {
     padding: 35px;
     font-size: $percent-number;
+    display: flex;
+
+    .progress-bar {
+      width: 75%;
+      height: 5px;
+      margin: 8px 0 0 15px;
+      background-color: $btn-background;
+      border-radius: 5px;
+
+      .progress-position {
+        width: 33%;
+        height: 5px;
+        background-color: $secondary;
+        border-radius: 5px;
+      }
+    }
   }
 
   .progress-container {
@@ -103,20 +120,18 @@ $notification: #ff5621;
     width: 70px;
     background-color: $btn-background;
     border-radius: 50%;
-
-    // margin: 0 0 15px 35px;
     cursor: pointer;
 
-    .hor {
+    .cross {
       position: relative;
-      height: 35px;
-      width: 35px;
+      height: 35px; /* cross length */
+      width: 35px; /* cross length */
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
-    .hor::before,
-    .hor::after {
+    .cross::before,
+    .cross::after {
       position: absolute;
       content: "";
       top: 34px;
@@ -126,12 +141,27 @@ $notification: #ff5621;
       background-color: $font-color;
     }
 
-    .hor::before {
+    .cross::before {
       transform: rotate(45deg);
     }
 
-    .hor::after {
+    .cross::after {
       transform: rotate(-45deg);
+    }
+  }
+
+  .number-indicator-btn {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: $notification-color;
+    position: absolute;
+
+    .number-indicator {
+      font-size: $notification;
+      font-weight: bold;
+      color: $font-color;
+      padding: 3px 0 0 7px;
     }
   }
 }
